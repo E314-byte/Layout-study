@@ -1,0 +1,36 @@
+body {
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #DAFDFF;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    background-color: #15BECB;
+    width: 140px;
+    height: 170px;
+    border-radius: 5px;
+    box-shadow: rgba(59, 57, 57, 0.658) 0 7px 29px 0;
+    transition: 300ms ease-in-out;
+}
+
+.card+.card {
+    margin-left: -10%;
+}
+
+.card:hover {
+    transform: rotate(-4deg);
+}
+
+.card:hover~.card {
+    z-index: 1;
+    translate: 60px;
+}
